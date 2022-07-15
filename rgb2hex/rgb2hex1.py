@@ -17,9 +17,6 @@ class RgbhexConverter(object):
 import unittest
 class RgbhexConverterTest(unittest.TestCase):
 
-# we will now create several methods whose names start with test,
-# so they are automatically picked up by the test number of unittest
-
 	def test_parsing_black(self):
 		value = RgbhexConverter('Black')
 		self.assertEqual('#000000', value.convert_to_hex())
@@ -38,9 +35,8 @@ class RgbhexConverterTest(unittest.TestCase):
 		value = RgbhexConverter('Yellow')
 		self.assertEqual('#FFFF00', value.convert_to_hex())				
 
-
-# The next step is making the entire script executable and then 
-# use the unittest's runner.
+ 
+# Unittest's runner.
 
 if __name__ == "__main__":
 	unittest.main()
